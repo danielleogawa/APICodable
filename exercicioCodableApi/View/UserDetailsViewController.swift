@@ -25,13 +25,12 @@ class UserDetailsViewController: UIViewController {
     
     private func configureScreen(){
         guard let viewModel = viewModel else { return }
-        DispatchQueue.main.async {
             self.nameLabel.text = viewModel.getName()
             self.emailLabel.text = viewModel.getEmail()
             self.zipCodeLabel.text = viewModel.getAddressZipCode()
             self.streetLabel.text = viewModel.getAddressStreet()
             self.cityLabel.text = viewModel.getAddressCity()
-        }
+
     }
 
 }
