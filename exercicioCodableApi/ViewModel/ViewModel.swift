@@ -30,6 +30,15 @@ class ViewModel {
         return users[posicao]
     }
     
+
+    func getUserDetails(row: Int?) -> UserDetailsViewModel?{
+        guard let row = row else { return nil }
+
+        let user = users[row]
+        let viewModel = UserDetailsViewModel(user: user)
+        return viewModel
+    }
+    
     func loadUser(){
         let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
         let task = session.dataTask(with: url) { data, _, error in

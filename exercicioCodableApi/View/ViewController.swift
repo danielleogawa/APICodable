@@ -17,8 +17,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+        listaTableView.delegate = self
         listaTableView.dataSource = self
         viewModel.loadUser()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? UserDetailsViewController {
+            let row = sender as? Int
+            detailsVC.viewModel = viewModel.getUserDetails(row: row)
+        }
     }
 
 }
@@ -35,10 +43,13 @@ extension ViewController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
-    
-    
 }
 
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailsSegue", sender: indexPath.row)
+    }
+}
 
 
 extension ViewController: UserViewModelDelegate {

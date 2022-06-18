@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEAC2413285E3B12002F77B5 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC2412285E3B12002F77B5 /* UserDetailsViewController.swift */; };
+		EEAC2415285E3BD7002F77B5 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC2414285E3BD7002F77B5 /* UserDetailsViewModel.swift */; };
 		EEF506E1285D088C00B92720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF506E0285D088C00B92720 /* AppDelegate.swift */; };
 		EEF506E3285D088C00B92720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF506E2285D088C00B92720 /* SceneDelegate.swift */; };
 		EEF506E5285D088C00B92720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF506E4285D088C00B92720 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEAC2412285E3B12002F77B5 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		EEAC2414285E3BD7002F77B5 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		EEF506DD285D088C00B92720 /* exercicioCodableApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercicioCodableApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF506E0285D088C00B92720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEF506E2285D088C00B92720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				EEF506E4285D088C00B92720 /* ViewController.swift */,
 				EEF50719285D32FD00B92720 /* NomeTableViewCell.swift */,
 				EEF506E6285D088C00B92720 /* Main.storyboard */,
+				EEAC2412285E3B12002F77B5 /* UserDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			children = (
 				EEF50717285D12F800B92720 /* ViewModel.swift */,
 				EEF5071B285D341800B92720 /* UsuarioViewModel.swift */,
+				EEAC2414285E3BD7002F77B5 /* UserDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,8 +309,10 @@
 				EEF50713285D12A000B92720 /* Service.swift in Sources */,
 				EEF506E1285D088C00B92720 /* AppDelegate.swift in Sources */,
 				EEF5071C285D341800B92720 /* UsuarioViewModel.swift in Sources */,
+				EEAC2415285E3BD7002F77B5 /* UserDetailsViewModel.swift in Sources */,
 				EEF50718285D12F800B92720 /* ViewModel.swift in Sources */,
 				EEF506E3285D088C00B92720 /* SceneDelegate.swift in Sources */,
+				EEAC2413285E3B12002F77B5 /* UserDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
